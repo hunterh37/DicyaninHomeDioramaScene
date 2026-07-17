@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "DiyaninHomeDioramaScene",
+    name: "DicyaninHomeDioramaScene",
     platforms: [
         .iOS(.v18),
         .visionOS(.v2)
     ],
     products: [
-        .library(name: "DiyaninHomeDioramaScene", targets: ["DiyaninHomeDioramaScene"])
+        .library(name: "DicyaninHomeDioramaScene", targets: ["DicyaninHomeDioramaScene"])
     ],
     targets: [
-        .target(name: "DiyaninHomeDioramaScene")
+        .target(name: "DicyaninHomeDioramaScene")
     ]
 )

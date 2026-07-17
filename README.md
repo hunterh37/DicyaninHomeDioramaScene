@@ -1,4 +1,4 @@
-# DiyaninHomeDioramaScene
+# DicyaninHomeDioramaScene
 
 A drop-in RealityKit "home diorama" scene: a low poly nature island floating on
 a glowing pedestal, slowly spinning, with a scatter of trees, rocks, grass, and
@@ -12,14 +12,14 @@ Swift Package Manager.
 
 Xcode: File > Add Package Dependencies > Add Local... and select this folder,
 or point at the git URL once it is pushed. Then add the
-`DiyaninHomeDioramaScene` library to your app target.
+`DicyaninHomeDioramaScene` library to your app target.
 
 `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/<you>/DiyaninHomeDioramaScene.git", from: "1.0.0"),
+.package(url: "https://github.com/<you>/DicyaninHomeDioramaScene.git", from: "1.0.0"),
 // then in your target dependencies:
-.product(name: "DiyaninHomeDioramaScene", package: "DiyaninHomeDioramaScene")
+.product(name: "DicyaninHomeDioramaScene", package: "DicyaninHomeDioramaScene")
 ```
 
 Requirements: iOS 18 / visionOS 2, Swift 6.
@@ -28,7 +28,7 @@ Requirements: iOS 18 / visionOS 2, Swift 6.
 
 ```swift
 import SwiftUI
-import DiyaninHomeDioramaScene
+import DicyaninHomeDioramaScene
 
 struct ContentView: View {
     var body: some View {
@@ -118,7 +118,7 @@ appear. If you build the diorama manually (see below) before showing the view,
 call this once at launch:
 
 ```swift
-DiyaninHomeDioramaScene.register()
+DicyaninHomeDioramaScene.register()
 ```
 
 ## Building into your own RealityView
@@ -126,7 +126,7 @@ DiyaninHomeDioramaScene.register()
 Skip `HomeDioramaView` and place the diorama in an existing scene:
 
 ```swift
-DiyaninHomeDioramaScene.register()
+DicyaninHomeDioramaScene.register()
 
 let root = Entity()
 root.name = "homeDiorama"
@@ -147,4 +147,4 @@ changed.
 - `DioramaSeason` : `.summer`, `.autumn`, `.winter`.
 - `HomeDioramaBuilder.build(into:config:)`.
 - `SpinComponent`.
-- `DiyaninHomeDioramaScene.register()`.
+- `DicyaninHomeDioramaScene.register()`.

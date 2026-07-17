@@ -5,7 +5,7 @@ import RealityKit
 /// than once. `HomeDioramaView` calls this automatically, but you can call it
 /// yourself from app launch if you prefer.
 @MainActor
-public enum DiyaninHomeDioramaScene {
+public enum DicyaninHomeDioramaScene {
     private static var registered = false
     public static func register() {
         guard !registered else { return }
@@ -32,7 +32,7 @@ public struct HomeDioramaView: View {
     }
 
     public var body: some View {
-        content.onAppear { DiyaninHomeDioramaScene.register() }
+        content.onAppear { DicyaninHomeDioramaScene.register() }
     }
 
     @ViewBuilder private var content: some View {
